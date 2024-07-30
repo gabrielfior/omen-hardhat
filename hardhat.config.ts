@@ -78,6 +78,11 @@ const config: HardhatUserConfig = {
       },
       chainId: chainIds.hardhat,
     },
+    foundry: {
+      accounts: ["0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"],
+      chainId: 31337,
+      url: "http://localhost:8546"
+    },
     ganache: {
       accounts: {
         mnemonic,
@@ -101,13 +106,13 @@ const config: HardhatUserConfig = {
     tests: "./test",
   },
   solidity: {
-    version: "0.8.19",
+    version: "0.5.10",
     settings: {
-      metadata: {
-        // Not including the metadata hash
-        // https://github.com/paulrberg/hardhat-template/issues/31
-        bytecodeHash: "none",
-      },
+      // metadata: {
+      //   // Not including the metadata hash
+      //   // https://github.com/paulrberg/hardhat-template/issues/31
+      //   bytecodeHash: "none",
+      // },
       // Disable the optimizer when debugging
       // https://hardhat.org/hardhat-network/#solidity-optimizer-support
       optimizer: {

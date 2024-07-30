@@ -1,3 +1,21 @@
+# Omen contracts on Chiado
+
+The goal of this repository is to create a subset of Omen's contracts that are deployable on any EVM chain (including Hardhat and Foundry local chains). Note that we intentionally don't deploy all contracts (refer to the original repository for all contracts), but rather only the ones required for the actions of AI agents.
+
+Below the original deployed contracts can be found.
+
+| Contracts to deploy | Address on GNO Mainnet | Deployable? |
+| ----------- | ----------- | ----------- |
+| FPMMDeterministicFactory | 0x9083A2B699c0a4AD06F63580BDE2635d26a3eeF0 | OK |
+| WXDAI | 0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d | OK |
+| OmenRealitioContract | 0x79e32aE03fb27B07C89c0c568F80287C01ca2E57 | To Do |
+| OmenConditionalTokenContract | 0xCeAfDD6bc0bEF976fdCd1112955828E00543c0Ce | To Do
+| OmenOracleContract | 0xAB16D643bA051C11962DA645f74632d3130c81E2 | To Do
+
+
+
+---
+
 # Hardhat Template [![Open in Gitpod][gitpod-badge]][gitpod] [![Github Actions][gha-badge]][gha] [![Hardhat][hardhat-badge]][hardhat] [![License: MIT][license-badge]][license]
 
 [gitpod]: https://gitpod.io/#https://github.com/paulrberg/hardhat-template
